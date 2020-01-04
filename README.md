@@ -6,4 +6,4 @@ Parameters can be edited at top of script as needed. Uses in-built *lowpass* fun
 
 *boot_CI.m* , *boot_diffCI.m* , *consec_idx.m* , *ERT_sim_report.m* , *permTest_array.m* === analysis/report functions 
 
-*Phil_ERTrealexample.m* === script that applies same analyses to real data, outputs figures
+*Phil_ERTrealexample.m* === script that applies same analyses to real data (ERT_testdata.mat), outputs figures
