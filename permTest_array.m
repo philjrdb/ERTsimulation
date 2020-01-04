@@ -35,35 +35,8 @@
 %                            samples, i.e. mean(sample1) - mean(sample2)
 %       effectsize - the effect size
 %
-% Usage example:
-%       >> permutationTest(rand(1,100), rand(1,100)-.25, 10000, ...
-%          'plotresult', 1, 'showprogress', 250)
-% 
-%                    Copyright 2015-2018 Laurens R Krol
-%                    Team PhyPA, Biological Psychology and Neuroergonomics,
-%                    Berlin Institute of Technology
-
-% 2019-02-01 lrk
-%   - Added short description
-%   - Increased the number of bins in the plot
-% 2018-03-15 lrk
-%   - Suppressed initial MATLAB:nchoosek:LargeCoefficient warning
-% 2018-03-14 lrk
-%   - Added exact test
-% 2018-01-31 lrk
-%   - Replaced calls to mean() with nanmean()
-% 2017-06-15 lrk
-%   - Updated waitbar message in first iteration
-% 2017-04-04 lrk
-%   - Added progress bar
-% 2017-01-13 lrk
-%   - Switched to inputParser to parse arguments
-% 2016-09-13 lrk
-%   - Caught potential issue when column vectors were used
-%   - Improved plot
-% 2016-02-17 toz
-%   - Added plot functionality
-% 2015-11-26 First version
+%  Copyright 2019 Philip Jean-Richard-dit-Bressel, UNSW Sydney
+%  Based on Laurens R Krol 2019 permutationTest.m
 
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
