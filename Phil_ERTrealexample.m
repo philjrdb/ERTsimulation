@@ -1,7 +1,4 @@
 %% ERT example
-ERT_test.Cp_off1 = Aggregate_Cp_off_Acq1sup_keep'*100;
-ERT_test.Cm_off3 = Aggregate_Cm_off_Acq3sup_keep'*100;
-
 sig = .05;
 consec_thresh = 340; % 1017.3Hz sample rate / 3Hz filter
 
@@ -10,7 +7,7 @@ ylims = [-1 4];
 xlims = [-2 5];
 sig_level = linspace(3.5,4,7);
 savefolder = ...
-   'M:\Gavan McNally''s Lab\Staff folders\Philip\Post-sub\Write-up\in prep\Bootstrapping (Frontiers)\Revision';
+   'M:\Gavan McNally''s Lab\Staff folders\Philip';
 
 %%
 [n_Cp,ev_win] = size(ERT_test.Cp_off1);
@@ -85,12 +82,19 @@ plot(timeline,mean_Cp,'Color',col_rep(2))
 errorplot3(mean_Cp-sem_Cp,mean_Cp+sem_Cp,[-4 5],col_rep(2),.15)
 
 plot(timeline,Cp_bCIexp_sig,'Color',col_rep(2),'Marker','.')
+text(xlims(1),sig_level(3),'CS+ bCI','Color',col_rep(2));
 plot(timeline,Cm_bCIexp_sig,'Color',col_rep(3),'Marker','.')
+text(xlims(1),sig_level(4),'CS- bCI','Color',col_rep(3));
 plot(timeline,Cp_tCI_sig,'Color',col_rep(2),'Marker','.')
+text(xlims(1),sig_level(5),'CS+ tCI','Color',col_rep(2));
 plot(timeline,Cm_tCI_sig,'Color',col_rep(3),'Marker','.')
+text(xlims(1),sig_level(6),'CS- tCI','Color',col_rep(3));
 plot(timeline,perm_p_sig,'Color',col_rep(1),'Marker','.')
+text(xlims(1),sig_level(1),'Perm','Color',col_rep(1));
 plot(timeline,diff_bCIexp_sig,'Color',col_rep(4),'Marker','.')
+text(xlims(1),sig_level(2),'Diff bCI','Color',col_rep(4));
 plot(timeline,diff_tCI_sig,'Color',col_rep(4),'Marker','.')
+text(xlims(1),sig_level(7),'Diff tCI','Color',col_rep(4));
 
 plot([-0.5 -0.5],ylim,'k:')
 plot(xlim,[0 0],'k--')
