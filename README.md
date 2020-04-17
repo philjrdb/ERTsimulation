@@ -4,6 +4,14 @@
 
 Parameters can be edited at top of script as needed. Uses in-built *lowpass* function (needs MATLAB 2018a or newer).
 
-*boot_CI.m* , *boot_diffCI.m* , *consec_idx.m* , *ERT_sim_report.m* , *permTest_array.m* === necessary analysis/report functions 
+Various analysis/report functions:
+*boot_CI.m* , *boot_diffCI.m* , *consec_idx.m* , *ERT_sim_report.m* , *permTest_array.m*, *sem.m*, *CIadjust.m*, *errorplot3.m*
 
 *Phil_ERTrealexample.m* === script that applies same analyses to real data (ERT_testdata.mat), outputs figures
+
+
+***********************************************************************
+EDITS/ADDITIONS:
+[2020-04-17] 
+Added missing functions *sem.m* *CIadjust.m* *errorplot3.m*
+Removed unnecessary data-import code from *Phil_ERTrealexample.m* , added code to label significance bars
