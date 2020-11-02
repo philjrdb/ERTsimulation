@@ -15,3 +15,8 @@ EDITS/ADDITIONS:
 [2020-04-17] 
 Added missing functions *sem.m* *CIadjust.m* *errorplot3.m*
 Removed unnecessary data-import code from *Phil_ERTrealexample.m* , added code to label significance bars
+
+***********************************************************************
+EDITS/ADDITIONS:
+[2020-11-02] 
+Added missing function *col_rep.m* (colour repository for graphs)
