@@ -9,9 +9,10 @@ function bootCI = boot_CI(data,num_boots,sig)
 %%Output:
 % bootCI = LCI+UCI vector
 
-%  Copyright 2019 Philip Jean-Richard-dit-Bressel, UNSW Sydney
-%  Based on Colin Clifford 2018 bootstrap_CI.m 
+%% By Philip Jean-Richard-dit-Bressel, UNSW Sydney, 2019
+% Feel free to use with citation: Jean-Richard-dit-Bressel et al. (2020). https://doi.org/10.3389/fnmol.2020.00014
 
+%% GNU
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
 % the Free Software Foundation, either version 3 of the License, or
@@ -24,6 +25,7 @@ function bootCI = boot_CI(data,num_boots,sig)
 %
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 
 [num_trials,window] = size(data);
 
