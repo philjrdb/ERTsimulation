@@ -1,7 +1,24 @@
 function ERT_sim_report(cont_err,cont_err_amount,cont_true_err,cont_true_err_amount, ...
    sig_err,sig_win_rate,T3)
-
+   
 % Reports results of simulation for null/control (cont) and ERT/signal (sig))
+
+%% By Philip Jean-Richard-dit-Bressel, UNSW Sydney, 2020
+% Feel free to use with citation: Jean-Richard-dit-Bressel et al. (2020). https://doi.org/10.3389/fnmol.2020.00014
+
+%% GNU
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 fprintf(['Avg control error rate: ' num2str(mean(cont_err)) ' (' ...
    num2str(min(cont_err)) '-' num2str(max(cont_err)) ')\n']);
