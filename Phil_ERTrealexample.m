@@ -9,6 +9,23 @@ sig_plot_level = linspace(4,3.2,7);
 savefolder = ...
    'M:\Gavan McNally''s Lab\Staff folders\Philip';
 
+%% By Philip Jean-Richard-dit-Bressel, UNSW Sydney, 2020
+% Feel free to use with citation: Jean-Richard-dit-Bressel et al. (2020). https://doi.org/10.3389/fnmol.2020.00014
+
+%% GNU
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 %%
 [n_Cp,ev_win] = size(ERT_test.Cp_off1);
 [n_Cm,~] = size(ERT_test.Cm_off3);
