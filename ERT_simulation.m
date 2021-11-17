@@ -3,8 +3,10 @@
 % Uses Monte Carlo methods to assess Type I/II/III error rates for t confidence intervals (tCI), 
 % bootstrapped confidence intervals (bCI) (n-factored expansion), and permutation tests.
 
-%  Copyright 2019 Philip Jean-Richard-dit-Bressel, UNSW Sydney
+%% By Philip Jean-Richard-dit-Bressel, UNSW Sydney, 2020
+% Feel free to use with citation: Jean-Richard-dit-Bressel et al. (2020). https://doi.org/10.3389/fnmol.2020.00014
 
+%% GNU
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
 % the Free Software Foundation, either version 3 of the License, or
