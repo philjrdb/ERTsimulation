@@ -26,7 +26,6 @@ function bootCI = boot_CI(data,num_boots,sig)
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 [num_trials,window] = size(data);
 
 % Minimum 2 trials (otherwise get funky signals due to inevitable crossing oscillations)
